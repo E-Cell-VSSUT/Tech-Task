@@ -8,7 +8,7 @@
  - Open a pull request
 ## _Day 1 Task_
  - Create a basic HTML form 
- - Save the file as FirstName.heml (eg: Binayak.html)
+ - Save the file as FirstName.html (eg: Binayak.html)
  - Add the file to Day 1 folder
  - Give a PR 
  
