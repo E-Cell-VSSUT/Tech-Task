@@ -1,0 +1,22 @@
+body{
+    background-color: whitesmoke;
+}
+h1{
+    text-align: center;
+}
+ img{
+    
+    vertical-align: middle;
+    width: 200px;
+    height: auto;
+}
+div{
+    padding: 20px 20px 20px 0;
+}
+
+.footer{
+    font-size: larger;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: thistle;
+}
