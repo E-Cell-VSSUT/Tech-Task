@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Best Form</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #16161a;
+            color: #fffffe;
+        }
+
+        .container-form{
+            padding: 2rem;
+            border-radius: 50px;
+            background: #16161a;
+            box-shadow:  20px -20px 60px #09090a,-20px 20px 60px #23232a;
+        }
+
+        .container-form h2{
+            text-align: center;
+            margin: 0 1rem 1rem 1rem;
+        }
+
+        form{
+            color: #2cb67d;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="container-form">
+        <h2>The Best Form !</h2>
+        <form action="">
+            <label for="Name">Name:</label>
+            <input required type="text" pattern="a-z A-Z"/><br /><br />
+            <label for="Email">Email:</label>
+            <input required type="email" /><br /><br />
+            <label for="Number">Mobile No :</label>
+            <input required type="number" /><br /><br />
+            <label for="Gender">Gender:</label>
+            <input type="radio" value="Male" name="gender" />
+            <label for="Male">Male</label>
+            <input type="radio" value="Female" name="gender" />
+            <label for="Female">Female</label>
+            <input type="radio" value="Others" name="gender" />
+            <label for="Others">Others</label><br /><br />
+            <label for="Branch">Branch:</label>
+            <select id="" name="Branch">
+                <option value="CSE">CSE</option>
+                <option value="EE">EE</option>
+                <option value="PE">PE</option>
+                <option value="CE">CE</option>
+                <option value="EEE">EEE</option>
+                <option value="ETC">ETC</option></select
+            ><br /><br>
+            <label for="Branch">Year:</label>
+            <select id="" name="Year">
+                <option value="2nd">2nd</option>
+                <option value="3rd">3rd</option>
+                <option value="4th">4th</option>
+            </select>
+        </form>
+    </section>
+</body>
+</html>
