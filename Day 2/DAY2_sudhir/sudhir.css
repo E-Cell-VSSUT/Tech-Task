@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: black;
+    color: white;
+}
+.heading{
+    
+    text-align: center;
+    text-transform: uppercase;
+}
+#movies .movies{
+    flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+ .all-movies{
+    display: flex;
+   
+    
+    flex-direction: column;
+}
+.resize{
+    height: 400px;
+    width: 300px;
+    margin: 10px;
+}
+.movie-item{
+    display: flex;
+    align-items: flex-start;
+}
+
+.headings{
+    text-transform: uppercase;
+}
+.foot{
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+h3 span{
+    color: crimson;
+}
