@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+        *{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: url(.\\images\\back.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.div1{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.div2{
+    background-color: rgba(22, 10, 49);
+    height: 100vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div3 {
+    background-color: white;
+    height: 85vh;
+    width: 25vw;
+    justify-content: center;
+    padding-top: 10px;
+    /* margin-left: -32px; */
+}
+
+.div4 {
+    background-color: rgba(255, 0, 0, 0.5);
+    height: 5vh;
+    width: 24vw;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding-left: 10px;
+    margin-left: 9px;
+    font-weight: 500;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.div5 {
+    background-color:rgba(255, 0, 0, 0.5);
+    height: 64vh;
+    width: 24vw;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding-left: 12px;
+    margin-left: 9px;
+    margin-top: 30px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.div5 p{
+    font-size: 20px;
+    margin: 10px 0 ;
+}
+
+.div6 input{
+    font-size: 16px;
+    width: 159%;
+    padding: 10px 12px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+}
+
+select {
+    font-size: 16px;
+    width: 159%;
+    padding: 10px 12px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+}
+
+.div7 {
+    font-size:18px;
+    padding: 7px;
+}
+
+.div7 label{
+    position: relative;
+    cursor: pointer;
+    padding-right: 4px;
+}
+
+.div8 {
+    height: 6vh;
+    width: 24vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-left: 9px;
+    margin-top: 20px;
+    font-weight: 500;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    font-size: 25px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 0, 0, 0.5);
+    border-radius: 10px;
+    border: 0;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-top: 20px;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgba(22, 10, 49);
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <div class="div2">
+            <div class="div3">
+                <div class="div4">
+                    STUDENT REGISTRATION FORM
+                </div>
+                <div class="div5">
+                    <form>
+                        <div class="div6">
+                        <p>Name</p>
+                        <input type="text" name="name" placeholder="Enter your name">
+                        <p>Email</p>
+                        <input type="email" name="email" placeholder="Enter your email-Id">
+                        <p>Phone No.</p>
+                        <input type="tel" name="phone" placeholder="Enter your Phone No.">
+                        <p>Gender</p>
+                        </div>
+                        <div class="div7">
+                        <input type="radio" value="Male" name="gender" />
+                        <label for="Male">Male</label>
+                        <input type="radio" value="Female" name="gender" />
+                        <label for="Female">Female</label>
+                        <input type="radio" value="Others" name="gender" />
+                        <label for="Others">Others</label>
+                        </div>
+                        <p>Branch</p>
+                        <select name="branch">
+                            <option value="ETC">ETC</option>
+                            <option value="EE">EE</option>
+                            <option value="PE">PE</option>
+                            <option value="CE">CE</option>
+                            <option value="EEE">EEE</option>
+                            <option value="CSE">CSE</option>
+                            <option value="IT">IT</option>
+                        </select>
+                        <p>Year</p>
+                        <select name="Year">
+                            <option value="1st">1st</option>
+                            <option value="2nd">2nd</option>
+                            <option value="3rd">3rd</option>
+                            <option value="4th">4th</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="div8">
+                    <button type="submit">
+                        S U B M I T
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
