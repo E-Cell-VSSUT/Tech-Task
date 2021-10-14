@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+
+    <style>
+        *{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: url("https://i.ibb.co/bQ5qzRb/back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background-color);
+}
+
+.div2{
+
+    background-color: rgba(255, 255, 255, 0.11);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.068);
+    border-top: 1px solid rgba(255, 255, 255, 0.075);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.div3{
+    background-color: rgba(255, 255, 255, 0.062);
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.178);
+    border-left: 1px solid rgba(255, 255, 255, 0.068);
+    border-top: 1px solid rgba(255, 255, 255, 0.075);
+    backdrop-filter: blur(10px);
+    justify-content: center;
+}
+
+.div4 {
+    background-color: rgba(255, 255, 255, 0.062);
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.178);
+    border-left: 1px solid rgba(255, 255, 255, 0.068);
+    border-top: 1px solid rgba(255, 255, 255, 0.075);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding-left: 10px;
+    margin-left: 9px;
+    font-weight: 500;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.div5 {
+    background-color: rgba(255, 255, 255, 0.062);
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.178);
+    border-left: 1px solid rgba(255, 255, 255, 0.068);
+    border-top: 1px solid rgba(255, 255, 255, 0.075);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding-left: 12px;
+    margin-left: 9px;
+    margin-top: 30px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.div5 p{
+    font-size: 20px;
+    margin: 12px 0 ;
+}
+
+
+input{
+    background-color: rgba(255, 255, 255, 0.062);
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.178);
+    backdrop-filter: blur(10px);
+    font-size: 16px;
+    width: 159%;
+    padding: 10px 7px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+}
+
+.gen{
+    background: transparent;
+    border: 0;
+}
+
+select {
+    background-color: rgba(255, 255, 255, 0.062);
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.178);
+    backdrop-filter: blur(10px);
+    font-size: 15px;
+    width: 100%;
+    padding: 10px 7px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+}
+
+.div6_index {
+    height: 6vh;
+    width: 24vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-left: 9px;
+    margin-top: 20px;
+    font-weight: 500;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+button {
+    background-color: rgba(255, 255, 255, 0.062);
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.178);
+    border-left: 1px solid rgba(255, 255, 255, 0.068);
+    border-top: 1px solid rgba(255, 255, 255, 0.075);
+    backdrop-filter: blur(10px);
+    font-size: 25px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 0;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-top: 20px;
+    letter-spacing: 20PX;
+}
+
+
+button:hover {
+    background-color: rgba(252, 87, 183, 0.164);
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.178);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+}
+
+span{
+    font-weight: lighter;
+}
+
+form > input {
+    width: 100%;
+}
+
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="div1" style="
+    width: 100%;
+    padding: 20px;
+">
+        <div class="div2" style="
+    height: 80%;
+    min-width: 350px;
+    width: 100%;
+    max-width: 550px;
+    padding: 60px 40px;
+">
+            <div class="div3" style="
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: grid;
+    justify-content: stretch;
+    align-content: space-evenly;
+    gap: 15px;
+">
+                <div class="div4" style="
+    width: 100%;
+    margin-left: 0;
+    height: 3rem;
+">
+                    Student Registration Form
+                <div class="sec" style="
+    margin-left: auto;
+    margin-right: 10px;
+">
+                
+                </div>
+                </div>
+                <div class="div5" style="
+    margin: 0;
+    width: 100%;
+    height: unset;
+    padding: 20px 15px;
+">
+                    <form style="
+    width: 100%;
+">
+                        <p>Name</p>
+                        <input type="text" name="username" placeholder="Enter your username" style="
+">
+                        <p>Email</p>
+                        <input type="email" name="email" placeholder="Enter your email-Id">
+                        
+                        <p>Phone No.</p>
+                        <input type="tel" name="phone" placeholder="Enter your Phone No.">
+                        
+                        <p>Gender</p>
+                        <input type="radio" value="Male" name="gender" style="background: transparent; box-shadow: none; backdrop-filter: none; padding: 0px; width: 15%;">
+                        <label for="Male">Male</label>
+                        <input type="radio" value="Male" name="gender" style="background: transparent; box-shadow: none; backdrop-filter: none; padding: 0px; width: 15%;">
+                        <label for="Male">Female</label>
+                        <input type="radio" value="Male" name="gender" style="background: transparent; box-shadow: none; backdrop-filter: none; padding: 0px; width: 15%;">
+                        <label for="Male">Others</label>
+
+                        <p>Branch</p>
+                        <select name="branch">
+                            <option value="ETC">ETC</option>
+                            <option value="EE">EE</option>
+                            <option value="PE">PE</option>
+                            <option value="CE">CE</option>
+                            <option value="EEE">EEE</option>
+                            <option value="CSE">CSE</option>
+                            <option value="IT">IT</option>
+                        </select>
+                        <p>Year</p>
+                        <select name="Year">
+                            <option value="1st">1st</option>
+                            <option value="2nd">2nd</option>
+                            <option value="3rd">3rd</option>
+                            <option value="4th">4th</option>
+                        </select>
+
+                    </form>
+                </div>
+                <div class="div6_index" style="
+    margin: 0;
+    width: unset;
+    height: unset;
+">
+                    <button type="submit" onclick="location.href='#';" style="
+    /* width: 250px; */
+    height: 3rem;
+    margin: 0;
+">
+                        SUBMIT
+                    </button>
+                </div>
+            </div>
+            </div>        
+        </div>
+</body>
+</html>
