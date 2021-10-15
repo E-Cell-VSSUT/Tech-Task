@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+    <style>
+      .border_change {
+        border: none;
+        background-color: transparent;
+        border-bottom: 3px white solid;
+        font-size: 1.6rem;
+        color: white;
+      }
+      .border_change:focus {
+        outline: none;
+      }
+      body {
+        background-image: linear-gradient(#f46b45, #eea849);
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        margin-top: 11%;
+        height: auto;
+        width: auto;
+        box-shadow: 20px 20px 30px 0px;
+        border-radius: 0px 20px 0px 20px;
+      }
+      form {
+        color: white;
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="color: white; text-align: center"><i class="fas fa-bookmark"></i>The Boring Form!</h1>
+      <form action="">
+        <label for="Name"></label>
+        <input
+          required
+          type="text"
+          pattern="a-z A-Z"
+          placeholder="Name"
+          class="border_change"
+        /><br /><br />
+        <label for="Email"></label>
+        <input
+          required
+          type="email"
+          placeholder="Email"
+          class="border_change"
+        /><br /><br />
+        <label for="Number"></label>
+        <input
+          required
+          type="number"
+          placeholder="Mobile Number"
+          class="border_change"
+        /><br /><br />
+        <label for="Gender">Gender:</label>
+        <input type="radio" value="Male" name="gender" />
+        <label for="Male">Male</label>
+        <input type="radio" value="Female" name="gender" />
+        <label for="Female">Female</label>
+        <input type="radio" value="Others" name="gender" />
+        <label for="Others">Others</label><br /><br />
+        <label for="Branch">Branch:</label>
+        <select id="" name="Branch">
+          <option value="CSE">CSE</option>
+          <option value="EE">EE</option>
+          <option value="PE">PE</option>
+          <option value="CE">CE</option>
+          <option value="EEE">EEE</option>
+          <option value="ETC">ETC</option></select
+        ><br /><br />
+        <label for="Branch">Year:</label>
+        <select id="" name="Year">
+          <option value="2nd">2nd</option>
+          <option value="3rd">3rd</option>
+          <option value="4th">4th</option>
+        </select>
+      </form>
+    </div>
+  </body>
+</html>
